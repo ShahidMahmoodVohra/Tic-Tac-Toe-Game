@@ -42,6 +42,7 @@ boxes.forEach((box) =>{
         // there is a problem we click all boxes with X & O after full all boxes X & O print again & again therefore we disable boxes after this function i.e box.disabled = true also checkWinner() and make a functio of checkWinner.
         box.disabled = true;
         checkWinner();
+    
     });
 });
 
@@ -65,6 +66,13 @@ const showWinner = (winner) => {
     msgContainer.classList.remove("hide");
      disableBoxes();
 };
+
+// 20/7/24
+const showDraw = () => {
+    msg.innerText = `It's a draw!`;
+    msgContainer.classList.remove("hide");
+};
+
 
 
 
@@ -92,6 +100,14 @@ const checkWinner = () => {
 
 
     }
+
+    // 20/7/24
+    if ([...boxes].every(box => box.innerText !== "")) {
+        showDraw();
+        return true;
+    }
+
+    return false;
 };
 
 
