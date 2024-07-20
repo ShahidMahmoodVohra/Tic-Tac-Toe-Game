@@ -1,82 +1,81 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #D77A61;
-
-    text-align: center;
+body {
+  background-color: #d77a61;
+  text-align: center;
 }
 
-h1{
-    color: #223843;
+h1 {
+  color: #223843;
 }
 
-.container{
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.game{
-    height: 60vmin;
-    width: 60vmin;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5vmin;
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
 }
 
 /* vmin 1% of the viewport's smaller dimension.
 we want three lines and 60 divided by 3 = 20 we will set 18vmin for boxes */
 
-.box{
-    height: 18vmin;
-    width: 18vmin;
-    border-radius: 1rem;
-    border: none;
-    box-sizing: 0 0 1rem rgba(0,0,0,.3);
-    font-size: 8vmin;
-    color: #D77A61;
-    background-color: #DBD3D8;
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-sizing: 0 0 1rem rgba(0, 0, 0, 0.3);
+  font-size: 8vmin;
+  color: #d77a61;
+  background-color: #dbd3d8;
 }
 
-#reset-btn{
-    padding: 1rem;
-    font-size: 1.25rem;
-    background-color:#223843;
-    color: #EFF1F3;
-    border-radius: 1rem;
-    border: none;
+#reset-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #223843;
+  color: #eff1f3;
+  border-radius: 1rem;
+  border: none;
 }
 
-#new-btn{
-    padding: 1rem;
-    font-size: 1.25rem;
-    background-color:#223843;
-    color: #EFF1F3;
-    border-radius: 1rem;
-    border: none;
+#new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #223843;
+  color: #eff1f3;
+  border-radius: 1rem;
+  border: none;
 }
 
-#msg{
-    color: #EFF1F3;
-    font-size: 7vmin;
+#msg {
+  color: #eff1f3;
+  font-size: 7vmin;
 }
 
-.msg-container{
-    height: 110vmin;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 4rem;
+.msg-container {
+  height: 110vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
 }
 
-.hide{
-    display: none;
+.hide {
+  display: none;
 }
