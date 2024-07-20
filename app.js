@@ -33,9 +33,12 @@ boxes.forEach((box) =>{
         // box.innerText = "ABCD"; for given some value like ABCD  but we want to print X & O if turnO is true turn === O turnO is equal to turn === O & we wrote innerText = "O" & trunO = false; bcs next time turn O will not print
         if(turnO){
             box.innerText = "O";
+            box.style.color = "white" 
             turnO = false;
         } else {
             box.innerText = "X";
+            box.style.color = "teal" 
+
             turnO = true;
 
         }
